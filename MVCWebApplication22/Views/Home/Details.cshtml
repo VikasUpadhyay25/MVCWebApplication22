@@ -9,7 +9,7 @@
 <div>
     <h4>Provider</h4>
     <hr />
-    <dl class="dl-horizontal">
+    @*<dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.ProviderName)
         </dt>
@@ -24,7 +24,7 @@
 
         <dd>
             @Html.DisplayFor(model => model.ProviderType)
-        </dd>
+        </dd>*@
 
         @*<dt>
             @Html.DisplayNameFor(model => model.Address)
@@ -50,7 +50,9 @@
             @Html.DisplayFor(model => model.State)
         </dd>*@
 
-    </dl>
+    @*</dl>*@
+
+    @Html.Partial("_DetailsPartialView", Model)
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ProviderId, name = Model.ProviderName, type = Model.ProviderType }) |

@@ -8,6 +8,8 @@ namespace MVCWebApplication22
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
+
+            //filters.Add(new HandleErrorAttribute() { ExceptionType = typeof(System.IndexOutOfRangeException), View = "_IndexOutOfRangeExceptionView" });
         }
     }
 }

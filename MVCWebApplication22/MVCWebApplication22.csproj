@@ -175,6 +175,7 @@
     <Content Include="Views\Home\Edit.cshtml" />
     <Content Include="Views\Home\ListProducts.cshtml" />
     <Content Include="Views\Home\test.cshtml" />
+    <Content Include="Views\Home\_DetailsPartialView.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
